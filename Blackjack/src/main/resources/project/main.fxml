@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <Label fx:id="currencyLbl" layoutX="10.0" layoutY="10.0" text="Currency: $100" />
+      <ImageView fitHeight="120.0" fitWidth="200.0" layoutX="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bj_logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="playBtn" layoutX="252.0" layoutY="333.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" text="Play" />
+      <VBox layoutX="-1.0" layoutY="87.0" prefHeight="119.0" prefWidth="600.0" styleClass="white-border">
+         <children>
+            <HBox layoutX="-1.0" layoutY="87.0" prefHeight="0.0" prefWidth="600.0" styleClass="title-border">
+               <children>
+                  <Label fx:id="dealerHandValueLbl" alignment="CENTER" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="599.0" text="Dealer Hand      Value:" textAlignment="RIGHT">
+                     <opaqueInsets>
+                        <Insets left="250.0" />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dealerImg1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="120.0" />
+                     </HBox.margin></ImageView>
+                  <ImageView fx:id="dealerImg2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></ImageView>
+                  <ImageView fx:id="dealerImg3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="dealerImg4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="dealerImg5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </children></HBox>
+         </children>
+      </VBox>
+      <VBox layoutY="205.0" prefHeight="119.0" prefWidth="600.0" styleClass="white-border">
+         <children>
+            <HBox prefHeight="55.0" prefWidth="596.0" styleClass="title-border">
+               <children>
+                  <Label fx:id="playerHandValueLbl" alignment="CENTER" prefHeight="17.0" prefWidth="599.0" text="Player Hand     Value:" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="playerImg1" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="120.0" />
+                     </HBox.margin></ImageView>
+                  <ImageView fx:id="playerImg2" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playerImg3" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playerImg4" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="playerImg5" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" />
+               </children></HBox>
+         </children>
+      </VBox>
+      <Label fx:id="winResultLbl" layoutX="381.0" layoutY="338.0" prefHeight="35.0" prefWidth="219.0" text="Dealer Wins!">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="playerWinCountLbl" layoutX="1.0" layoutY="338.0" prefHeight="35.0" prefWidth="122.0" text="Player  Wins:">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="dealerWinCountLbl" layoutX="126.0" layoutY="338.0" prefHeight="33.0" prefWidth="122.0" text="Dealer Wins:">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Button fx:id="hitBtn" layoutX="250.0" layoutY="333.0" mnemonicParsing="false" text="Hit" />
+      <Button fx:id="standBtn" layoutX="329.0" layoutY="333.0" mnemonicParsing="false" text="Stand" />
+   </children>
+</AnchorPane>
