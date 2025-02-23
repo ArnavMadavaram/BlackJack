@@ -40,21 +40,6 @@ The dealer must hit until reaching at least 17.
 A push (tie) results in a refund of the player's bet.
 The player wins by having a higher hand value than the dealer without busting.
 
-# Project Structure
-blackjack-game/
-│── src/main/java/project/
-│   ├── App.java           # Main JavaFX application entry point
-│   ├── Controller.java    # Game controller handling UI interactions
-│   ├── Card.java          # Card class representing individual playing cards
-│   ├── Deck.java          # Deck class managing deck operations
-│   ├── Player.java        # Player class managing player actions and stats
-│── src/main/resources/
-│   ├── main.fxml          # JavaFX UI layout
-│   ├── cards/             # Directory containing card images
-│── wins.txt               # Persistent storage for win records
-│── README.md              # Project documentation
-│── pom.xml                # Maven configuration
-
 # Future Enhancements
 Multiplayer Mode – Allow multiple players to compete against the dealer.
 Advanced AI Dealer – Introduce different AI playing strategies.
